@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Quiz Result{% endblock %}
+{% block content %}
+<h2>🏆 Quiz Completed!</h2>
+<p>Final Score: {{ player_score }}/{{ total_questions }}</p>
+{% for i, question in enumerate(quiz) %}
+    <div class="question-block">
+        <h3>📋 Question {{ i+1 }}</h3>
+        <p><strong>{{ question.question }}</strong></p>
+        <p>
+            {% if user_answers[i] is not none %}
+                {% set user_answer = question.options[user_answers[i]] %}
+                {% if user_answer == question.correct_answer %}
+                    ✅ <strong>Your Answer:</strong> {{ user_answer }}
+                {% else %}
+                    ❌ <strong>Your Answer:</strong> {{ user_answer }}
+                {% endif %}
+            {% else %}
+                ⚠️ <strong>No answer selected</strong>
+            {% endif %}
+        </p>
+        <p>📚 <strong>Correct Answer:</strong> {{ question.correct_answer }}</p>
+    </div>
+{% endfor %}
+<a href="{{ url_for('index') }}">Restart Quiz</a>
+{% endblock %}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TCS NQT Advance Round - Unstop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #fafbfc;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .container {
+      display: flex;
+      max-width: 100%;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      overflow: hidden;
+    }
+    .sidebar {
+      width: 550px;
+      background: #f6f8fa;
+      padding: 36px 32px;
+      border-right: 1px solid #e3e6e8;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .sidebar .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .sidebar .logo img {
+      width: 42px;
+      height: 42px;
+      margin-right: 14px;
+    }
+    .sidebar .opportunity {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .sidebar .org {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+    .sidebar h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 22px 0;
+    }
+    .sidebar .details {
+      font-size: 15px;
+      color: #222;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .sidebar .details i {
+      margin-right: 10px;
+      color: #888;
+      font-size: 18px;
+    }
+    .sidebar .dates {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .sidebar .dates i {
+      margin-right: 10px;
+      color: #888;
+      font-size: 18px;
+    }
+    .main {
+      flex: 1;
+      padding: 36px 42px 32px 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .main h1 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .main .section-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    .main ul {
+      margin: 0 0 22px 18px;
+      padding: 0;
+      font-size: 15px;
+      color: #222;
+    }
+    .main ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .main .marking, .main .key-instructions {
+      margin-bottom: 24px;
+    }
+    .main .input-section {
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .main .input-section input[type="text"] {
+      padding: 8px 12px;
+      font-size: 15px;
+      border: 1.5px solid #cfd8dc;
+      border-radius: 5px;
+      outline: none;
+      width: 120px;
+      transition: border 0.2s;
+    }
+    .main .input-section input[type="text"]:focus {
+      border: 1.5px solid #0070f3;
+    }
+    .main .input-section button {
+      padding: 8px 26px;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 5px;
+      background: #0070f3;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+    .main .input-section button.enabled {
+      opacity: 1;
+      cursor: pointer;
+    }
+    .main .input-section button:disabled {
+      cursor: not-allowed;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e3e6e8;
+      }
+      .main {
+        padding: 28px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg" alt="Unstop Logo">
+        <div>
+          <div class="opportunity">TCS NQT Advance Round</div>
+          <div class="org">Unstop</div>
+        </div>
+      </div>
+      <h2>Advanced Quants</h2>
+      <div class="details"><i>⏱️</i> Assessment Duration: <b style="margin-left:5px;">20 Minutes</b></div>
+      <div class="details"><i>❓</i> No. of Questions: <b style="margin-left:5px;">10 Questions</b></div>
+      <div class="dates"><i>📅</i> Start Date: <b style="margin-left:5px;">21 Feb 25, 12:01 AM IST</b></div>
+      <div class="dates"><i>📅</i> End Date: <b style="margin-left:5px;">01 Dec 25, 05:15 PM IST</b></div>
+    </div>
+    <div class="main">
+      <h1>Assessment Guidelines</h1>
+      <div style="color:#444; font-size:15px; margin-bottom:18px;">Kindly read through the following key instructions and important guidelines for this assessment:</div>
+      <div class="section-title">Timelines & Questions:</div>
+      <ul>
+        <li><b>Assessment Window:</b> 21 Feb 25, 12:01 AM IST to 01 Dec 25, 05:15 PM IST</li>
+        <li><b>Assessment Duration:</b> 00:20:00 (hh:mm:ss)</li>
+        <li><b>Total Questions to be answered:</b> 10 Questions</li>
+        <li>You can attempt the assessment anytime between the provided assessment window.</li>
+        <li>Please ensure that you attempt the assessment in one sitting as once you start the assessment, the timer won’t stop.</li>
+        <li>You will have to finish the assessment on or before 01 Dec 25, 05:15 PM IST. To get the complete assessment duration, you need to start the assessment latest by 01 Dec 25, 04:55 PM IST. Otherwise, you’ll get less time to complete the assessment.</li>
+      </ul>
+      <div class="section-title">Marking:</div>
+      <ul class="marking">
+        <li>Each participant's ranking will be determined based on the accuracy of their answers. If two participants achieve the same score, the one who completes the assessment in the least amount of time will be ranked higher.</li>
+      </ul>
+      <div class="section-title">Key Instructions:</div>
+      <ul class="key-instructions">
+        <li>Only the person who registered will be able to take the assessment. In case of team registration, the team leader who registered the team will be able to take the assessment.</li>
+        <li>You’ll be able to browse through the questions.</li>
+        <li>You’ll have to submit answers/code/solutions to all the questions individually.</li>
+      </ul>
+      <div class="input-section">
+        <span>To Start, please type <b>start</b> in the box and click the "Start" button</span>
+        <input type="text" id="startInput" placeholder="Type here...">
+        <button id="startBtn" onclick="location.href='{{ url_for('test', topic=topic) }}'" disabled>Start</button>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    const input = document.getElementById('startInput');
+    const btn = document.getElementById('startBtn');
+    input.addEventListener('input', function() {
+      if (input.value.trim().toLowerCase() === 'start') {
+        btn.disabled = false;
+        btn.classList.add('enabled');
+      } else {
+        btn.disabled = true;
+        btn.classList.remove('enabled');
+      }
+    });
+  </script>
+</body>
+</html>
