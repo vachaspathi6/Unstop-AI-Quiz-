@@ -1,4 +1,4 @@
-google 
+google-genai
 flask
 streamlit
 os
